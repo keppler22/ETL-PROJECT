@@ -1537,7 +1537,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>ID_INTEGRADOR</name>
         <rename>ID_INTEGRADOR</rename>
-        <type>None</type>
+        <type>Integer</type>
         <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
@@ -1554,7 +1554,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>CDDN_APELLIDO1</name>
         <rename>CDDN_APELLIDO1</rename>
-        <type>None</type>
+        <type>String</type>
         <length>200</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -1571,7 +1571,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>CDDN_APELLIDO2</name>
         <rename>CDDN_APELLIDO2</rename>
-        <type>None</type>
+        <type>String</type>
         <length>200</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -1588,7 +1588,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>CDDN_TIPO_DOCUMENTO</name>
         <rename>CDDN_TIPO_DOCUMENTO</rename>
-        <type>None</type>
+        <type>String</type>
         <length>3</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -1606,7 +1606,7 @@ WHERE ID_CIRCULO = 40</sql>
         <name>ID_CIUDADANO</name>
         <rename>ID_CIUDADANO</rename>
         <type>String</type>
-        <length>38</length>
+        <length>12</length>
         <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1622,7 +1622,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>CDDN_SEXO</name>
         <rename>CDDN_SEXO</rename>
-        <type>None</type>
+        <type>String</type>
         <length>1</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -1639,7 +1639,7 @@ WHERE ID_CIRCULO = 40</sql>
       <meta>
         <name>CDDN_NOMBRE</name>
         <rename>CDDN_NOMBRE</rename>
-        <type>None</type>
+        <type>String</type>
         <length>65</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -2701,7 +2701,7 @@ WHERE ID_CIRCULO = 40</sql>
         <name>ID_CIUDADANO</name>
         <rename>ID_CIUDADANO</rename>
         <type>String</type>
-        <length>20</length>
+        <length>12</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -2792,7 +2792,7 @@ WHERE ID_CIRCULO = 40</sql>
     </remotesteps>
     <GUI>
       <xloc>1040</xloc>
-      <yloc>144</yloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
