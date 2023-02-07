@@ -738,7 +738,7 @@
     <ignore_flag_field/>
     <lookup>
       <schema>SIR</schema>
-      <table>PR_CIUDADANO</table>
+      <table>SIR_NE_CIUDADANO</table>
       <key>
         <name>ID_CIUDADANO</name>
         <field>ID_CIUDADANO</field>
