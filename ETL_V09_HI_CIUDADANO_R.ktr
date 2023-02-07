@@ -437,113 +437,7 @@
   <notepads>
   </notepads>
   <connection>
-    <name>CX_ODS</name>
-    <server>localhost</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>bd_repo</database>
-    <port>5432</port>
-    <username>postgres</username>
-    <password>Encrypted 2be98afc86aa7f2e4aa1da379d0c3fd89</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>5432</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
-  <connection>
     <name>CX_SNR</name>
-    <server>192.168.66.17</server>
-    <type>ORACLE</type>
-    <access>Native</access>
-    <database>/TRNSIRDG3</database>
-    <port>1521</port>
-    <username>SIR</username>
-    <password>Encrypted 2be98afc86ae49d88a414ac79dfc3fd89</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>1521</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STRICT_NUMBER_38_INTERPRETATION</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>CX_SNR_PR</name>
     <server>192.168.66.17</server>
     <type>ORACLE</type>
     <access>Native</access>
@@ -600,78 +494,63 @@
   <order>
     <hop>
       <from>LD00</from>
-      <to>Dummy (do nothing)</to>
+      <to>ROK</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>LD00</from>
-      <to>Dummy (do nothing) 2</to>
+      <to>RNOK</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>CSV file input</from>
-      <to>Select values</to>
+      <from>EX00</from>
+      <to>TRHC00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TR06_1</from>
-      <to>TR06_2</to>
+      <from>TRHC02</from>
+      <to>TRHC03</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TR08</from>
-      <to>Unique rows</to>
+      <from>TRHC04</from>
+      <to>TRHC_05</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Unique rows</from>
-      <to>TR12</to>
+      <from>TRHC_05</from>
+      <to>TRHC06</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TR12</from>
-      <to>Select values 2</to>
+      <from>TRHC06</from>
+      <to>TRHC07</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>TR07</to>
+      <from>TRHC00</from>
+      <to>TRHC01</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TR07</from>
-      <to>TR06_1</to>
+      <from>TRHC01</from>
+      <to>TRHC02</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TR06_2</from>
-      <to>TR08</to>
+      <from>TRHC03</from>
+      <to>TRHC04</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Table input</from>
-      <to>Merge join</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Select values 2</from>
-      <to>Merge join</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Table input</from>
-      <to>Table output</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Select values 2</from>
+      <from>TRHC07</from>
       <to>LD00</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Dummy (do nothing)</name>
-    <type>Dummy</type>
+    <name>EX00</name>
+    <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -680,6 +559,319 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <filename>F:\CVS\EjemploNormalizacion_FuncionalV1.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure/>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding/>
+    <fields>
+      <field>
+        <name>numero_Inmueble</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>8</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Tipo_Documento_Propietario</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Identificacion_Propietario</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>NOMBRE_PROPIETARIO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>PRIMER_APELLIDO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>12</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>SEGUNDO_APELLIDO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Sexo</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Tipo_via_abreav</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Nombre_Principal</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>12</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_1P</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>BISP</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_2P</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cuadrante_P</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>5</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Nombre_Generadora</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_1G</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>BISG</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_2G</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>N£mero</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cuadrante</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Complemento</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Domicilio_Comprimido</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Departamento</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>18</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Municipio</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Cod_Postal</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>DIVIPOLA</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>DEPARTAMENTO</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>MUNICIPIO</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -689,32 +881,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1232</xloc>
-      <yloc>32</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Dummy (do nothing) 2</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1344</xloc>
+      <xloc>64</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -779,14 +946,64 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1232</xloc>
+      <xloc>784</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TR06_1</name>
-    <type>StringOperations</type>
+    <name>RNOK</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ROK</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TRHC00</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -796,162 +1013,186 @@
       <schema_name/>
     </partitioning>
     <fields>
-      <field>
-        <in_stream_name>CDDN_NOMBRE</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return (CR)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_NOMBRE</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>line feed (LF)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_NOMBRE</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_NOMBRE</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>horizontal tab</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return (CR)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>line feed (LF)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>horizontal tab</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return (CR)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>line feed (LF)</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
-        <out_stream_name/>
-        <trim_type/>
-        <lower_upper/>
-        <padding_type/>
-        <pad_char/>
-        <pad_len/>
-        <init_cap/>
-        <mask_xml/>
-        <digits/>
-        <remove_special_characters>horizontal tab</remove_special_characters>
-      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>Tipo_via_abreav</name>
+      </remove>
+      <remove>
+        <name>Nombre_Principal</name>
+      </remove>
+      <remove>
+        <name>Letra_1P</name>
+      </remove>
+      <remove>
+        <name>BISP</name>
+      </remove>
+      <remove>
+        <name>Letra_2P</name>
+      </remove>
+      <remove>
+        <name>Cuadrante_P</name>
+      </remove>
+      <remove>
+        <name>Nombre_Generadora</name>
+      </remove>
+      <remove>
+        <name>Letra_1G</name>
+      </remove>
+      <remove>
+        <name>BISG</name>
+      </remove>
+      <remove>
+        <name>Letra_2G</name>
+      </remove>
+      <remove>
+        <name>N£mero</name>
+      </remove>
+      <remove>
+        <name>Cuadrante</name>
+      </remove>
+      <remove>
+        <name>Complemento</name>
+      </remove>
+      <remove>
+        <name>Domicilio_Comprimido</name>
+      </remove>
+      <remove>
+        <name>Departamento</name>
+      </remove>
+      <remove>
+        <name>Municipio</name>
+      </remove>
+      <remove>
+        <name>Cod_Postal</name>
+      </remove>
+      <remove>
+        <name>DIVIPOLA</name>
+      </remove>
+      <remove>
+        <name>DEPARTAMENTO_1</name>
+      </remove>
+      <remove>
+        <name>MUNICIPIO_1</name>
+      </remove>
+      <meta>
+        <name>Tipo_Documento_Propietario</name>
+        <rename>CDDN_TIPO_DOCUMENTO</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Sexo</name>
+        <rename>CDDN_SEXO</rename>
+        <type>String</type>
+        <length>1</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>SEGUNDO_APELLIDO</name>
+        <rename>CDDN_APELLIDO2</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>PRIMER_APELLIDO</name>
+        <rename>CDDN_APELLIDO1</rename>
+        <type>String</type>
+        <length>150</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>NOMBRE_PROPIETARIO</name>
+        <rename>CDDN_NOMBRE</rename>
+        <type>String</type>
+        <length>300</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Identificacion_Propietario</name>
+        <rename>ID_CIUDADANO</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>numero_Inmueble</name>
+        <rename>CDDN_DOCUMENTO</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -962,13 +1203,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>400</xloc>
+      <xloc>192</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TR07</name>
+    <name>TRHC01</name>
     <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
@@ -1661,37 +1902,178 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
+      <xloc>256</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TR08</name>
-    <type>SortRows</type>
+    <name>TRHC02</name>
+    <type>StringOperations</type>
     <description/>
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>ID_CIUDADANO</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
+        <in_stream_name>CDDN_NOMBRE</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return (CR)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_NOMBRE</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>line feed (LF)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_NOMBRE</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_NOMBRE</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>horizontal tab</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return (CR)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>line feed (LF)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO1</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>horizontal tab</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return (CR)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>line feed (LF)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>CDDN_APELLIDO2</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>horizontal tab</remove_special_characters>
       </field>
     </fields>
     <attributes/>
@@ -1703,13 +2085,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
+      <xloc>320</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TR06_2</name>
+    <name>TRHC03</name>
     <type>StringOperations</type>
     <description/>
     <distribute>Y</distribute>
@@ -1808,13 +2190,55 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>384</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TR12</name>
+    <name>TRHC04</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>ID_CIUDADANO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TRHC06</name>
     <type>Calculator</type>
     <description/>
     <distribute>N</distribute>
@@ -1924,354 +2348,16 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>784</xloc>
+      <xloc>592</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>CSV file input</name>
-    <type>CsvInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>F:\CVS\EjemploNormalizacion_FuncionalV1.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>;</separator>
-    <enclosure/>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
-    <fields>
-      <field>
-        <name>numero_Inmueble</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>8</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Tipo_Documento_Propietario</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>2</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Identificacion_Propietario</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>NOMBRE_PROPIETARIO</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>28</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRIMER_APELLIDO</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>SEGUNDO_APELLIDO</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>11</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Sexo</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Tipo_via_abreav</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>2</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Nombre_Principal</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Letra_1P</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>BISP</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Letra_2P</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Cuadrante_P</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>5</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Nombre_Generadora</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Letra_1G</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>BISG</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Letra_2G</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>N£mero</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Cuadrante</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Complemento</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>28</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Domicilio_Comprimido</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>26</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Departamento</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>18</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Municipio</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>19</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Cod_Postal</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DIVIPOLA</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DEPARTAMENTO</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>MUNICIPIO</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>64</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
+    <name>TRHC07</name>
     <type>SelectValues</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -2279,71 +2365,63 @@
       <schema_name/>
     </partitioning>
     <fields>
+      <field>
+        <name>ID_CIUDADANO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_APELLIDO1</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_APELLIDO2</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_DOCUMENTO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_FECHA_CREACION</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_NOMBRE</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_SEXO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_SOLICITANTE</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_TELEFONO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CDDN_TIPO_PERSONA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>ID_CIRCULO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>ID_NCIUDADANO</name>
+        <rename/>
+      </field>
       <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>Tipo_via_abreav</name>
-      </remove>
-      <remove>
-        <name>Nombre_Principal</name>
-      </remove>
-      <remove>
-        <name>Letra_1P</name>
-      </remove>
-      <remove>
-        <name>BISP</name>
-      </remove>
-      <remove>
-        <name>Letra_2P</name>
-      </remove>
-      <remove>
-        <name>Cuadrante_P</name>
-      </remove>
-      <remove>
-        <name>Nombre_Generadora</name>
-      </remove>
-      <remove>
-        <name>Letra_1G</name>
-      </remove>
-      <remove>
-        <name>BISG</name>
-      </remove>
-      <remove>
-        <name>Letra_2G</name>
-      </remove>
-      <remove>
-        <name>N£mero</name>
-      </remove>
-      <remove>
-        <name>Cuadrante</name>
-      </remove>
-      <remove>
-        <name>Complemento</name>
-      </remove>
-      <remove>
-        <name>Domicilio_Comprimido</name>
-      </remove>
-      <remove>
-        <name>Departamento</name>
-      </remove>
-      <remove>
-        <name>Municipio</name>
-      </remove>
-      <remove>
-        <name>Cod_Postal</name>
-      </remove>
-      <remove>
-        <name>DIVIPOLA</name>
-      </remove>
-      <remove>
-        <name>DEPARTAMENTO_1</name>
-      </remove>
-      <remove>
-        <name>MUNICIPIO_1</name>
-      </remove>
       <meta>
-        <name>Tipo_Documento_Propietario</name>
-        <rename>CDDN_TIPO_DOCUMENTO</rename>
-        <type>String</type>
+        <name>ID_CIUDADANO</name>
+        <rename>ID_CIUDADANO</rename>
+        <type>None</type>
         <length>20</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -2358,43 +2436,9 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Sexo</name>
-        <rename>CDDN_SEXO</rename>
-        <type>String</type>
-        <length>1</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>SEGUNDO_APELLIDO</name>
-        <rename>CDDN_APELLIDO2</rename>
-        <type>String</type>
-        <length>100</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>PRIMER_APELLIDO</name>
+        <name>CDDN_APELLIDO1</name>
         <rename>CDDN_APELLIDO1</rename>
-        <type>String</type>
+        <type>None</type>
         <length>150</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -2409,9 +2453,26 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>NOMBRE_PROPIETARIO</name>
+        <name>CDDN_APELLIDO2</name>
+        <rename>CDDN_APELLIDO2</rename>
+        <type>None</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_NOMBRE</name>
         <rename>CDDN_NOMBRE</rename>
-        <type>String</type>
+        <type>None</type>
         <length>300</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -2426,10 +2487,78 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>Identificacion_Propietario</name>
-        <rename>ID_CIUDADANO</rename>
-        <type>String</type>
+        <name>CDDN_SEXO</name>
+        <rename>CDDN_SEXO</rename>
+        <type>None</type>
+        <length>1</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_DOCUMENTO</name>
+        <rename>CDDN_DOCUMENTO</rename>
+        <type>None</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename>CDDN_TIPO_DOCUMENTO</rename>
+        <type>None</type>
         <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_FECHA_CREACION</name>
+        <rename>CDDN_FECHA_CREACION</rename>
+        <type>None</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_SOLICITANTE</name>
+        <rename>CDDN_SOLICITANTE</rename>
+        <type>None</type>
+        <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -2443,10 +2572,61 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>numero_Inmueble</name>
-        <rename>CDDN_DOCUMENTO</rename>
-        <type>String</type>
+        <name>CDDN_TELEFONO</name>
+        <rename>CDDN_TELEFONO</rename>
+        <type>None</type>
         <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>CDDN_TIPO_PERSONA</name>
+        <rename>CDDN_TIPO_PERSONA</rename>
+        <type>None</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>ID_NCIUDADANO</name>
+        <rename>ID_NCIUDADANO</rename>
+        <type>None</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>ID_CIRCULO</name>
+        <rename>ID_CIRCULO</rename>
+        <type>None</type>
+        <length>3</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -2469,13 +2649,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
+      <xloc>672</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Unique rows</name>
+    <name>TRHC_05</name>
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
@@ -2504,539 +2684,15 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>720</xloc>
+      <xloc>528</xloc>
       <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values 2</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>CDDN_APELLIDO1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_APELLIDO2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_DOCUMENTO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_FECHA_CREACION</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_NOMBRE</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_SEXO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_SOLICITANTE</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_TELEFONO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_TIPO_DOCUMENTO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CDDN_TIPO_PERSONA</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ID_CIUDADANO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ID_CIRCULO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ID_NCIUDADANO</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>CDDN_TIPO_PERSONA</name>
-        <rename>CDDN_TIPO_PERSONA</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>0</precision>
-        <conversion_mask>#</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>896</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Table input</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>CX_SNR_PR</connection>
-    <sql>SELECT
-  CDDN_APELLIDO1
-, CDDN_APELLIDO2
-, CDDN_DOCUMENTO
-, CDDN_FECHA_CREACION
-, CDDN_NOMBRE
-, CDDN_SEXO
-, CDDN_SOLICITANTE
-, CDDN_TELEFONO
-, CDDN_TIPO_DOCUMENTO
-, CDDN_TIPO_PERSONA
-, ID_CIUDADANO
-, ID_CIRCULO
-, ID_NCIUDADANO
-FROM SIR.PR_CIUDADANO
-</sql>
-    <limit>0</limit>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <cached_row_meta_active>N</cached_row_meta_active>
-    <row-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_APELLIDO1</name>
-        <length>150</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_APELLIDO1</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_APELLIDO2</name>
-        <length>100</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_APELLIDO2</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_DOCUMENTO</name>
-        <length>100</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_DOCUMENTO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_FECHA_CREACION</name>
-        <length>2000</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_FECHA_CREACION</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_NOMBRE</name>
-        <length>300</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_NOMBRE</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_SEXO</name>
-        <length>1</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_SEXO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>BigNumber</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_SOLICITANTE</name>
-        <length>-1</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_SOLICITANTE</comments>
-        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_TELEFONO</name>
-        <length>100</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_TELEFONO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_TIPO_DOCUMENTO</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_TIPO_DOCUMENTO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_TIPO_PERSONA</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>CDDN_TIPO_PERSONA</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>ID_CIUDADANO</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>ID_CIUDADANO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>ID_CIRCULO</name>
-        <length>3</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>ID_CIRCULO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>ID_NCIUDADANO</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>ID_NCIUDADANO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-    </row-meta>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>896</xloc>
-      <yloc>16</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Table output</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>CX_ODS</connection>
-    <schema>public</schema>
-    <table>pr_ciudadano_respaldo</table>
-    <commit>1000</commit>
-    <truncate>N</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1120</xloc>
-      <yloc>16</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Merge join</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>INNER</join_type>
-    <step1>Table input</step1>
-    <step2>Select values 2</step2>
-    <keys_1>
-      <key>ID_CIUDADANO</key>
-    </keys_1>
-    <keys_2>
-      <key>ID_CIUDADANO</key>
-    </keys_2>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1008</xloc>
-      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step_error_handling>
     <error>
       <source_step>LD00</source_step>
-      <target_step>Dummy (do nothing) 2</target_step>
+      <target_step>RNOK</target_step>
       <is_enabled>Y</is_enabled>
       <nr_valuename/>
       <descriptions_valuename/>
