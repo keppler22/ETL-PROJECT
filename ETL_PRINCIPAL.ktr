@@ -805,12 +805,12 @@
     <hop>
       <from>TRHDV06</from>
       <to>LDMNC</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>TRHDV06</from>
       <to>LDDEP</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>LDDEP</from>

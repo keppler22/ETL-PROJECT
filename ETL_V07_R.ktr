@@ -1055,6 +1055,21 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <calculation>
+      <field_name>ID_DIRECCION</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>0</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>Integer</value_type>
+      <value_length>15</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1083,117 +1098,159 @@
     <fields>
       <field>
         <name>CDDN_APELLIDO1</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO2</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_ESPECIFICACION</name>
+        <rename/>
       </field>
       <field>
         <name>ID_ZONA_REGISTRAL</name>
+        <rename/>
       </field>
       <field>
         <name>MUNICIPIO</name>
+        <rename/>
       </field>
       <field>
         <name>DPRT_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>MNCP_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MUNICIPIO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>AREA_CONSTRUIDA</name>
+        <rename/>
       </field>
       <field>
         <name>AREA_PRIVADA</name>
+        <rename/>
       </field>
       <field>
         <name>AREA_TOTAL</name>
+        <rename/>
       </field>
       <field>
         <name>COEFICIENTE</name>
+        <rename/>
       </field>
       <field>
         <name>TIPODEVIA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPODEVIA_ABREV</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_PRINCIPAL</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1P</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_1P</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2P</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE_P</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_GENERADORA</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1G</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_1G</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2G</name>
+        <rename/>
       </field>
       <field>
         <name>NUMERO</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE</name>
+        <rename/>
       </field>
       <field>
         <name>COMPLEMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO_1</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO_2</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA_1</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA_2</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIUDADANO_1</name>
+        <rename/>
+      </field>
+      <field>
+        <name>ID_DIRECCION</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>

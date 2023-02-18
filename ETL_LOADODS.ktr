@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>ETL_V07_RF1</name>
+    <name>ETL_LOADODS</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -489,18 +489,23 @@
   </connection>
   <order>
     <hop>
-      <from>CSV file input</from>
-      <to>Select values</to>
+      <from>EXCSV00</from>
+      <to>TRCSV00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Table output</to>
+      <from>TRCSV00</from>
+      <to>TRCSV01</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>TRCSV01</from>
+      <to>LDCSV00</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>CSV file input</name>
+    <name>EXCSV00</name>
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -510,7 +515,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>F:\CVS\EJEMPLO_NORMALIZACION.csv</filename>
+    <filename>F:\CVS\EjemploNormalizacion_FuncionalV1.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -526,29 +531,29 @@
     <encoding/>
     <fields>
       <field>
-        <name>ID_MATRICULA</name>
-        <type>String</type>
+        <name>Bis</name>
+        <type>Boolean</type>
         <format/>
         <currency>$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>8</length>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>CDDN_TIPO_DOCUMENTO</name>
-        <type>String</type>
+        <name>Bis</name>
+        <type>Boolean</type>
         <format/>
         <currency>$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>2</length>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>ID_CIUDADANO</name>
+        <name>Cod_Postal</name>
         <type>Integer</type>
         <format>#</format>
         <currency>$</currency>
@@ -559,7 +564,7 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>CDDN_NOMBRE</name>
+        <name>Complemento</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
@@ -570,161 +575,7 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>CDDN_APELLIDO1</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>CDDN_APEELIDO2</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>11</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>CDDN_SEXO</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_TIPO_VIA_ABR</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>2</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_NOMBRE_PRINCIPAL</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_LETRA_1P</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_BISP</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_LETRA_2P</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_CUADRANTEP</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>5</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_NOMBRE_GENERADORA</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_LETRA_1G</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_BISG</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_LETRA_2G</name>
-        <type>Boolean</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_NUMERO</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>DRCC_CUADRANTE</name>
+        <name>Cuadrante</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
@@ -735,29 +586,40 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>DRCC_COMPLEMENTO</name>
+        <name>Cuadrante_P</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>28</length>
+        <length>5</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>DRCC_DIRECCION</name>
-        <type>String</type>
-        <format/>
+        <name>DEPARTAMENTO</name>
+        <type>Integer</type>
+        <format>#</format>
         <currency>$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>26</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>LDEPAR</name>
+        <name>DIVIPOLA</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Departamento</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
@@ -768,7 +630,84 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>LMUNIC</name>
+        <name>Domicilio_Comprimido</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Identificacion_Propietario</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_1G</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_1P</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_2G</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Letra_2P</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>MUNICIPIO</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Municipio</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
@@ -779,7 +718,18 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>ID_DEPAR</name>
+        <name>NOMBRE_PROPIETARIO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Nombre_Generadora</name>
         <type>Integer</type>
         <format>#</format>
         <currency>$</currency>
@@ -790,7 +740,18 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>CPOBLA</name>
+        <name>Nombre_Principal</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>12</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>N£mero</name>
         <type>Integer</type>
         <format>#</format>
         <currency>$</currency>
@@ -798,6 +759,72 @@
         <group>.</group>
         <length>15</length>
         <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>PRIMER_APELLIDO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>12</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>SEGUNDO_APELLIDO</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Sexo</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Tipo_Documento_Propietario</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Tipo_via_abreav</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>numero_Inmueble</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>8</length>
+        <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
@@ -816,7 +843,7 @@
     </GUI>
   </step>
   <step>
-    <name>Table output</name>
+    <name>LDCSV00</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -827,10 +854,10 @@
       <schema_name/>
     </partitioning>
     <connection>CX_BDREPO</connection>
-    <schema/>
-    <table>GRUPONORMALIZADO</table>
+    <schema>public</schema>
+    <table>grupo_normalizado</table>
     <commit>1000</commit>
-    <truncate>N</truncate>
+    <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
     <use_batch>Y</use_batch>
     <specify_fields>N</specify_fields>
@@ -854,13 +881,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>560</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>TRCSV00</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -873,11 +900,11 @@
     <fields>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>ID_MATRICULA</name>
-        <rename>ID_MATRICULA</rename>
-        <type>String</type>
-        <length>20</length>
-        <precision>-2</precision>
+        <name>DIVIPOLA</name>
+        <rename>DIVIPOLA</rename>
+        <type>Integer</type>
+        <length>40</length>
+        <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
@@ -890,8 +917,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CDDN_TIPO_DOCUMENTO</name>
-        <rename>CDDN_TIPO_DOCUMENTO</rename>
+        <name>Bis_1</name>
+        <rename>BIS_G</rename>
         <type>String</type>
         <length>3</length>
         <precision>-2</precision>
@@ -907,27 +934,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ID_CIUDADANO</name>
-        <rename>ID_CIUDADANO</rename>
-        <type>Integer</type>
-        <length>20</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>CDDN_NOMBRE</name>
-        <rename>CDDN_NOMBRE</rename>
+        <name>Bis</name>
+        <rename>BIS_P</rename>
         <type>String</type>
-        <length>65</length>
+        <length>3</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -941,10 +951,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CDDN_APELLIDO1</name>
+        <name>PRIMER_APELLIDO</name>
         <rename>CDDN_APELLIDO1</rename>
         <type>String</type>
-        <length>30</length>
+        <length>150</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -958,10 +968,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CDDN_APEELIDO2</name>
-        <rename>CDDN_APEELIDO2</rename>
+        <name>NOMBRE_PROPIETARIO</name>
+        <rename>CDDN_NOMBRE</rename>
         <type>String</type>
-        <length>30</length>
+        <length>300</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -975,7 +985,7 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CDDN_SEXO</name>
+        <name>Sexo</name>
         <rename>CDDN_SEXO</rename>
         <type>String</type>
         <length>1</length>
@@ -992,8 +1002,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DRCC_TIPO_VIA_ABR</name>
-        <rename>DRCC_TIPO_VIA_ABR</rename>
+        <name>Tipo_Documento_Propietario</name>
+        <rename>CDDN_TIPO_DOCUMENTO</rename>
         <type>String</type>
         <length>2</length>
         <precision>-2</precision>
@@ -1009,195 +1019,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DRCC_NOMBRE_PRINCIPAL</name>
-        <rename>DRCC_NOMBRE_PRINCIPAL</rename>
-        <type>String</type>
-        <length>20</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_LETRA_1P</name>
-        <rename>DRCC_LETRA_1P</rename>
-        <type>String</type>
-        <length>2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_BISP</name>
-        <rename>DRCC_BISP</rename>
-        <type>Boolean</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_LETRA_2P</name>
-        <rename>DRCC_LETRA_2P</rename>
-        <type>String</type>
-        <length>2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_CUADRANTEP</name>
-        <rename>DRCC_CUADRANTEP</rename>
-        <type>String</type>
-        <length>5</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_NOMBRE_GENERADORA</name>
-        <rename>DRCC_NOMBRE_GENERADORA</rename>
-        <type>String</type>
-        <length>15</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_LETRA_1G</name>
-        <rename>DRCC_LETRA_1G</rename>
-        <type>String</type>
-        <length>2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_BISG</name>
-        <rename>DRCC_BISG</rename>
-        <type>Boolean</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_LETRA_2G</name>
-        <rename>DRCC_LETRA_2G</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_NUMERO</name>
-        <rename>DRCC_NUMERO</rename>
-        <type>Integer</type>
-        <length>15</length>
-        <precision>0</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_CUADRANTE</name>
-        <rename>DRCC_CUADRANTE</rename>
-        <type>String</type>
-        <length>5</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>DRCC_COMPLEMENTO</name>
-        <rename>DRCC_COMPLEMENTO</rename>
+        <name>SEGUNDO_APELLIDO</name>
+        <rename>CDNN_APELLIDO2</rename>
         <type>String</type>
         <length>100</length>
         <precision>-2</precision>
@@ -1213,11 +1036,11 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>DRCC_DIRECCION</name>
-        <rename>DRCC_DIRECCION</rename>
-        <type>String</type>
-        <length>30</length>
-        <precision>-2</precision>
+        <name>Cod_Postal</name>
+        <rename>CODIGO_POSTAL</rename>
+        <type>Integer</type>
+        <length>25</length>
+        <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
@@ -1230,8 +1053,8 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>LDEPAR</name>
-        <rename>LDEPAR</rename>
+        <name>Complemento</name>
+        <rename>COMPLEMENTO</rename>
         <type>String</type>
         <length>45</length>
         <precision>-2</precision>
@@ -1247,10 +1070,10 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>LMUNIC</name>
-        <rename>LMUNIC</rename>
+        <name>Cuadrante</name>
+        <rename>CUADRANTE</rename>
         <type>String</type>
-        <length>65</length>
+        <length>5</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1264,9 +1087,196 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>ID_DEPAR</name>
-        <rename>ID_DEPAR</rename>
-        <type>Integer</type>
+        <name>Cuadrante_P</name>
+        <rename>CUADRANTE_P</rename>
+        <type>String</type>
+        <length>5</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Departamento</name>
+        <rename>DPRT_NOMBRE</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Identificacion_Propietario</name>
+        <rename>ID_CIUDADANO</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>DEPARTAMENTO_1</name>
+        <rename>ID_DEPARTAMENTO</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>numero_Inmueble</name>
+        <rename>ID_MATRICULA</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>MUNICIPIO_1</name>
+        <rename>ID_MUNICIPIO</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Letra_1G</name>
+        <rename>LETRA_1G</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Letra_1P</name>
+        <rename>LETRA_1P</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Letra_2P</name>
+        <rename>LETRA_2P</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Letra_2G</name>
+        <rename>LETRA_EG</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Municipio</name>
+        <rename>MNCO_NOMBRE</rename>
+        <type>String</type>
+        <length>255</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Nombre_Generadora</name>
+        <rename>NOMBRE_GENERADORA</rename>
+        <type>String</type>
         <length>15</length>
         <precision>0</precision>
         <conversion_mask/>
@@ -1281,11 +1291,62 @@
         <storage_type/>
       </meta>
       <meta>
-        <name>CPOBLA</name>
-        <rename>CPOBLA</rename>
-        <type>Integer</type>
-        <length>15</length>
+        <name>Nombre_Principal</name>
+        <rename>NOMBRE_PRINCIPAL</rename>
+        <type>String</type>
+        <length>45</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>N£mero</name>
+        <rename>NUMERO</rename>
+        <type>String</type>
+        <length>4</length>
         <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Domicilio_Comprimido</name>
+        <rename>TIPO_VIA</rename>
+        <type>String</type>
+        <length>100</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>Tipo_via_abreav</name>
+        <rename>TIPO_VIA_ABREAV</rename>
+        <type>String</type>
+        <length>2</length>
+        <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
@@ -1308,6 +1369,152 @@
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TRCSV01</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>Y</failIfNoFile>
+    <calculation>
+      <field_name>ID_CIRCULO</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>999</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>3</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_CENTIMETROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_METROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_PRIV_CENTIMETROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_PRIV_METROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_CONS_CENTIMETROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_CONS_METROS</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FOLIO_COEFICIENTE</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>1</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>20</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>

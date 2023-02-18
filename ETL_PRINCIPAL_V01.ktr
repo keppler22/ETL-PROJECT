@@ -940,7 +940,7 @@
     </hop>
     <hop>
       <from>LDC_NOK</from>
-      <to>Text file output 2</to>
+      <to>TOCDDN_NOK</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -991,6 +991,11 @@
     <hop>
       <from>LDDAP_NOK</from>
       <to>TOARNOK</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>LDC_OK</from>
+      <to>TOCDDN_OK</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -2649,60 +2654,79 @@ FROM "public".grupo_normalizado
     <fields>
       <field>
         <name>ID_MATRICULA_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_DIRECCION</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_VIA_PRINCIPAL</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA_ABREV</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_VP</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_VP</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_BIS_VP</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_CARDINALIDAD_VP</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_DOS_VP</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_BIS_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_DOS_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_DOS_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_CARDINALIDAD_VS</name>
+        <rename/>
       </field>
       <field>
         <name>DRCC_COMPLEMENTO</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -3387,107 +3411,158 @@ FROM "public".grupo_normalizado
     <fields>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO1</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO2</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MUNICIPIO</name>
+        <rename/>
       </field>
       <field>
         <name>MNCP_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>DPRT_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>DIVIPOLA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA_ABREV</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_PRINCIPAL</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1P</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_P</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2P</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE_P</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_GENERADORA</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1G</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_G</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2G</name>
+        <rename/>
       </field>
       <field>
         <name>NUMERO</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE</name>
+        <rename/>
       </field>
       <field>
         <name>COMPLEMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>folio_centimetros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_metros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_cons_centimetros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_cons_metros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_priv_centimetros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_priv_metros</name>
+        <rename/>
       </field>
       <field>
         <name>folio_coeficiente</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>ID_MATRICULA</name>
+        <rename>ID_MATRICULA</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>-2</precision>
+        <conversion_mask>#</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -5164,84 +5239,111 @@ FROM "public".grupo_normalizado
     <fields>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO1</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO2</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MUNICIPIO</name>
+        <rename/>
       </field>
       <field>
         <name>MNCP_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>DPRT_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>DIVIPOLA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA_ABREV</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_PRINCIPAL</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1P</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_P</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2P</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE_P</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_GENERADORA</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1G</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_G</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2G</name>
+        <rename/>
       </field>
       <field>
         <name>NUMERO</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE</name>
+        <rename/>
       </field>
       <field>
         <name>COMPLEMENTO</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>
@@ -6054,6 +6156,84 @@ FROM "public".grupo_normalizado
         <mask_xml/>
         <digits/>
         <remove_special_characters>horizontal tab</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters/>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return (CR)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>line feed (LF)</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>carriage return  &amp; line feed</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>horizontal tab</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>ID_MATRICULA</in_stream_name>
+        <out_stream_name/>
+        <trim_type/>
+        <lower_upper/>
+        <padding_type/>
+        <pad_char/>
+        <pad_len/>
+        <init_cap/>
+        <mask_xml/>
+        <digits/>
+        <remove_special_characters>space</remove_special_characters>
       </field>
     </fields>
     <attributes/>
@@ -6871,9 +7051,11 @@ FROM "public".grupo_normalizado
     <fields>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MUNICIPIO</name>
@@ -6893,69 +7075,96 @@ FROM "public".grupo_normalizado
       </field>
       <field>
         <name>DIVIPOLA</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO1</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO2</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA</name>
+        <rename/>
       </field>
       <field>
         <name>TIPO_VIA_ABREV</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_PRINCIPAL</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1P</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_P</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2P</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE_P</name>
+        <rename/>
       </field>
       <field>
         <name>NOMBRE_GENERADORA</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_1G</name>
+        <rename/>
       </field>
       <field>
         <name>BIS_G</name>
+        <rename/>
       </field>
       <field>
         <name>LETRA_2G</name>
+        <rename/>
       </field>
       <field>
         <name>NUMERO</name>
+        <rename/>
       </field>
       <field>
         <name>CUADRANTE</name>
+        <rename/>
       </field>
       <field>
         <name>COMPLEMENTO</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>
+        <name>BIS_G</name>
+      </remove>
+      <remove>
+        <name>BIS_P</name>
+      </remove>
+      <remove>
         <name>CDDN_APELLIDO1</name>
       </remove>
       <remove>
@@ -6971,49 +7180,40 @@ FROM "public".grupo_normalizado
         <name>CDDN_TIPO_DOCUMENTO</name>
       </remove>
       <remove>
-        <name>ID_MATRICULA</name>
+        <name>COMPLEMENTO</name>
+      </remove>
+      <remove>
+        <name>CUADRANTE</name>
+      </remove>
+      <remove>
+        <name>CUADRANTE_P</name>
+      </remove>
+      <remove>
+        <name>LETRA_1G</name>
+      </remove>
+      <remove>
+        <name>LETRA_1P</name>
+      </remove>
+      <remove>
+        <name>LETRA_2G</name>
+      </remove>
+      <remove>
+        <name>LETRA_2P</name>
+      </remove>
+      <remove>
+        <name>NOMBRE_GENERADORA</name>
+      </remove>
+      <remove>
+        <name>NOMBRE_PRINCIPAL</name>
+      </remove>
+      <remove>
+        <name>NUMERO</name>
       </remove>
       <remove>
         <name>TIPO_VIA</name>
       </remove>
       <remove>
         <name>TIPO_VIA_ABREV</name>
-      </remove>
-      <remove>
-        <name>NOMBRE_PRINCIPAL</name>
-      </remove>
-      <remove>
-        <name>LETRA_1P</name>
-      </remove>
-      <remove>
-        <name>BIS_P</name>
-      </remove>
-      <remove>
-        <name>LETRA_2P</name>
-      </remove>
-      <remove>
-        <name>CUADRANTE_P</name>
-      </remove>
-      <remove>
-        <name>NOMBRE_GENERADORA</name>
-      </remove>
-      <remove>
-        <name>LETRA_1G</name>
-      </remove>
-      <remove>
-        <name>BIS_G</name>
-      </remove>
-      <remove>
-        <name>LETRA_2G</name>
-      </remove>
-      <remove>
-        <name>NUMERO</name>
-      </remove>
-      <remove>
-        <name>CUADRANTE</name>
-      </remove>
-      <remove>
-        <name>COMPLEMENTO</name>
       </remove>
       <meta>
         <name>DIVIPOLA</name>
@@ -7440,12 +7640,15 @@ FROM "public".grupo_normalizado
     <fields>
       <field>
         <name>ID_CIUDADANO</name>
+        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
+        <rename/>
       </field>
       <field>
         <name>DIVIPOLA</name>
+        <rename/>
       </field>
       <field>
         <name>DIVIPO</name>
@@ -7453,12 +7656,15 @@ FROM "public".grupo_normalizado
       </field>
       <field>
         <name>MNCP_NOMBRE</name>
+        <rename/>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
+        <rename/>
       </field>
       <field>
         <name>DPRT_NOMBRE</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -7816,7 +8022,7 @@ FROM "public".grupo_normalizado
     </GUI>
   </step>
   <step>
-    <name>Text file output 2</name>
+    <name>TOCDDN_NOK</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -7840,7 +8046,7 @@ FROM "public".grupo_normalizado
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>F:\DOCUMENTOS_SALIDA\SIR_NE_CIUDADANO</name>
+      <name>F:\DOCUMENTOS_SALIDA\SIR_NE_CIUDADANO_NOK</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>txt</extention>
@@ -9242,6 +9448,63 @@ FROM "public".grupo_normalizado
     <GUI>
       <xloc>1200</xloc>
       <yloc>560</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TOCDDN_OK</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>F:\DOCUMENTOS_SALIDA\SIR_NE_CIUDADANO_OK</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1392</xloc>
+      <yloc>16</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

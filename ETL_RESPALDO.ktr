@@ -430,11 +430,209 @@
     <created_date>2023/02/08 23:45:00.299</created_date>
     <modified_user>-</modified_user>
     <modified_date>2023/02/08 23:45:00.299</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>SIR_NE_CIUDADANO</note>
+      <xloc>48</xloc>
+      <yloc>32</yloc>
+      <width>121</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_DIRECCION</note>
+      <xloc>48</xloc>
+      <yloc>112</yloc>
+      <width>112</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_MUNICIPIO</note>
+      <xloc>48</xloc>
+      <yloc>288</yloc>
+      <width>113</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_DEPARTAMENTO - OK</note>
+      <xloc>48</xloc>
+      <yloc>192</yloc>
+      <width>167</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_FOLIO</note>
+      <xloc>48</xloc>
+      <yloc>368</yloc>
+      <width>85</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_ZONA_REGISTRAL</note>
+      <xloc>48</xloc>
+      <yloc>448</yloc>
+      <width>147</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>SIR_NE_VEREDA</note>
+      <xloc>48</xloc>
+      <yloc>528</yloc>
+      <width>93</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
+  <connection>
+    <name>CX_ODS</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>bd_repo</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4aa1da379d0c3fd89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <connection>
     <name>CX_SNR</name>
     <server>192.168.66.17</server>
@@ -492,48 +690,78 @@
   </connection>
   <order>
     <hop>
-      <from>EX_DIR00</from>
+      <from>EXDIR00</from>
       <to>TRDIR00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>EX_CDN00</from>
-      <to>TRCDOO</to>
+      <from>EXCDN00</from>
+      <to>TRCDNOO</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>EX_MNC00</from>
-      <to>TRMN00</to>
+      <from>EXMNC00</from>
+      <to>TRMNC00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>EX_DEP_00</from>
-      <to>TRDP00</to>
+      <from>EXDEP_00</from>
+      <to>TRDEP00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TRCDOO</from>
-      <to>LDCD00</to>
+      <from>TRCDNOO</from>
+      <to>LDCDN00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>TRDIR00</from>
-      <to>LDDR00</to>
+      <to>LDDIR00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TRDP00</from>
+      <from>TRDEP00</from>
       <to>LDDEP00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TRMN00</from>
-      <to>LDMN00</to>
+      <from>TRMNC00</from>
+      <to>LDMNC00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>EXFOL00</from>
+      <to>TRFOL00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>TRFOL00</from>
+      <to>LDFOL00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>EXZNR00</from>
+      <to>TRZNR00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>TRZNR00</from>
+      <to>LDZNR00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>EXVER00</from>
+      <to>TRVER00</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>TRVER00</from>
+      <to>LDVER00</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>EX_CDN00</name>
+    <name>EXCDN00</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -573,7 +801,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>ID_CIUDADANO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>ID_CIUDADANO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -596,7 +824,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_DOCUMENTO</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_DOCUMENTO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -619,7 +847,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_NOMBRE</name>
         <length>300</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_NOMBRE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -642,7 +870,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_TIPO_DOCUMENTO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_TIPO_DOCUMENTO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -665,7 +893,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_APELLIDO1</name>
         <length>150</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_APELLIDO1</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -688,7 +916,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_APELLIDO2</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_APELLIDO2</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -711,7 +939,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_TELEFONO</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_TELEFONO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -734,7 +962,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_FECHA_CREACION</name>
         <length>0</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_FECHA_CREACION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -757,7 +985,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_SOLICITANTE</name>
         <length>-1</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_SOLICITANTE</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -780,7 +1008,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>ID_CIRCULO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>ID_CIRCULO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -803,7 +1031,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>ID_NCIUDADANO</name>
         <length>20</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>ID_NCIUDADANO</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -826,7 +1054,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_TIPO_PERSONA</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_TIPO_PERSONA</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -849,7 +1077,7 @@ FROM SIR.SIR_NE_CIUDADANO
         <name>CDDN_SEXO</name>
         <length>1</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EXCDN00</origin>
         <comments>CDDN_SEXO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -876,13 +1104,146 @@ FROM SIR.SIR_NE_CIUDADANO
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
-      <yloc>32</yloc>
+      <xloc>240</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>EX_DIR00</name>
+    <name>EXDEP_00</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_SNR</connection>
+    <sql>SELECT
+  ID_DEPARTAMENTO
+, DPRT_NOMBRE
+, DPRT_FECHA_CREACION
+, ID_USUARIO
+FROM SIR.SIR_NE_DEPARTAMENTO
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>Y</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_DEPARTAMENTO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXDEP_00</origin>
+        <comments>ID_DEPARTAMENTO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DPRT_NOMBRE</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EXDEP_00</origin>
+        <comments>DPRT_NOMBRE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>DPRT_FECHA_CREACION</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EXDEP_00</origin>
+        <comments>DPRT_FECHA_CREACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_USUARIO</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EXDEP_00</origin>
+        <comments>ID_USUARIO</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>EXDIR00</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -896,9 +1257,7 @@ FROM SIR.SIR_NE_CIUDADANO
     <sql>SELECT
   ID_DIRECCION
 , ID_MATRICULA
-, DRCC_ESPECIFICACION
 , DRCC_VIA_PRINCIPAL
-, ID_EJE1
 , DRCC_NUMERO_VP
 , DRCC_VALOR_EJE1
 , DRCC_FECHA_CREACION
@@ -937,7 +1296,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_DIRECCION</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_DIRECCION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -960,31 +1319,8 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_MATRICULA</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_MATRICULA</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>DRCC_ESPECIFICACION</name>
-        <length>4000</length>
-        <precision>-1</precision>
-        <origin>EX_DIR00</origin>
-        <comments>DRCC_ESPECIFICACION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1006,31 +1342,8 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_VIA_PRINCIPAL</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_VIA_PRINCIPAL</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>ID_EJE1</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>EX_DIR00</origin>
-        <comments>ID_EJE1</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1052,7 +1365,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_NUMERO_VP</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_NUMERO_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1075,7 +1388,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_VALOR_EJE1</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_VALOR_EJE1</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1098,7 +1411,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_FECHA_CREACION</name>
         <length>0</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_FECHA_CREACION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1121,7 +1434,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_USUARIO</name>
         <length>-1</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_USUARIO</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1144,7 +1457,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_USUARIO_TMP</name>
         <length>-1</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_USUARIO_TMP</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1167,7 +1480,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_USUARIO_ANT</name>
         <length>15</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_USUARIO_ANT</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1190,7 +1503,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_CIRCULO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_CIRCULO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1213,7 +1526,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_NDIRECCION</name>
         <length>20</length>
         <precision>0</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_NDIRECCION</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1236,7 +1549,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>ID_EJE</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>ID_EJE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1259,7 +1572,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_VALOR_EJE</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_VALOR_EJE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1282,7 +1595,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_LETRA_VP</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_LETRA_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1305,7 +1618,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_BIS_VP</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_BIS_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1328,7 +1641,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_LETRA_DOS_VP</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_LETRA_DOS_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1351,7 +1664,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_CARDINALIDAD_VP</name>
         <length>30</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_CARDINALIDAD_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1374,7 +1687,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_NUMERO_VS</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_NUMERO_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1397,7 +1710,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_LETRA_VS</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_LETRA_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1420,7 +1733,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_BIS_VS</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_BIS_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1443,7 +1756,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_CARDINALIDAD_VS</name>
         <length>30</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_CARDINALIDAD_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1466,7 +1779,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_LETRA_DOS_VS</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_LETRA_DOS_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1489,7 +1802,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_NUMERO_DOS_VS</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_NUMERO_DOS_VS</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1512,7 +1825,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_INFO_ADICIONAL</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_INFO_ADICIONAL</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1535,7 +1848,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>DRCC_COMPLEMENTO</name>
         <length>400</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>DRCC_COMPLEMENTO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1558,7 +1871,7 @@ FROM SIR.SIR_NE_DIRECCION
         <name>COPIED</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX_DIR00</origin>
+        <origin>EXDIR00</origin>
         <comments>COPIED</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1585,13 +1898,13 @@ FROM SIR.SIR_NE_DIRECCION
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
+      <xloc>240</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>EX_DEP_00</name>
+    <name>EXFOL00</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1603,11 +1916,57 @@ FROM SIR.SIR_NE_DIRECCION
     </partitioning>
     <connection>CX_SNR</connection>
     <sql>SELECT
-  ID_MUNICIPIO
-, MNCP_NOMBRE
-, ID_DEPARTAMENTO
+  ID_MATRICULA
+, FLIO_COD_CATASTRAL
+, ID_ESTADO
+, ID_TIPO_PREDIO
+, ID_ZONA_REGISTRAL
+, ID_COMPLEMENTACION
+, FLIO_FECHA_APERTURA
+, FLIO_DEFINITIVO
+, FLIO_LINDERO
+, FLIO_LAST_ID_ANOTACION
+, FLIO_LAST_ID_DIRECCION
+, FLIO_LAST_ID_SALVEDAD
+, FLIO_FECHA_CREACION
+, FLIO_COD_CATASTRAL_ANT
+, ID_DOCUMENTO
+, FLIO_RADICACION
+, FLIO_USUARIO_GRAB
+, FLIO_LAST_ID_ANOTACION_TMP
+, FLIO_LAST_ID_DIRECCION_TMP
+, FLIO_LAST_ID_SALVEDAD_TMP
+, ID_COMPLEMENTACION_TMP
+, FLIO_INCONSISTENTE
 , ID_USUARIO
-FROM SIR.SIR_NE_MUNICIPIO
+, FLIO_COMENTARIO
+, FLIO_ORDEN_LPAD
+, FLIO_LAST_ID_ESTADO_HISTORIA
+, ID_DOCUMENTO_TMP
+, FLIO_NOMBRE_LOTE
+, FLIO_USUARIO_ANT
+, FLIO_DIRECTO
+, ID_CIRCULO
+, ID_NCOMPLEMENTACION
+, ID_NCOMPLEMENTACION_TMP
+, ID_NDOCUMENTO
+, ID_NDOCUMENTO_TMP
+, FLIO_HECTAREAS
+, FLIO_METROS
+, FLIO_CENTIMETROS
+, FLIO_DETERMINA_INM
+, FLIO_PRIV_METROS
+, FLIO_PRIV_CENTIMETROS
+, FLIO_CONS_METROS
+, FLIO_CONS_CENTIMETROS
+, FLIO_COEFICIENTE
+, FLIO_LINDEROS_DEF
+, FLIO_AVALUO
+, FLIO_FECHA_AVALUO
+, FLIO_DEST_ECONOMICA
+, FLIO_NUPRE
+, FLIO_NUPRE_ANT
+FROM SIR.SIR_NE_FOLIO
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -1619,11 +1978,11 @@ FROM SIR.SIR_NE_MUNICIPIO
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>ID_MUNICIPIO</name>
+        <name>ID_MATRICULA</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input 3</origin>
-        <comments>ID_MUNICIPIO</comments>
+        <origin>EX_FOL00</origin>
+        <comments>ID_MATRICULA</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1642,11 +2001,11 @@ FROM SIR.SIR_NE_MUNICIPIO
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>MNCP_NOMBRE</name>
-        <length>255</length>
+        <name>FLIO_COD_CATASTRAL</name>
+        <length>100</length>
         <precision>-1</precision>
-        <origin>Table input 3</origin>
-        <comments>MNCP_NOMBRE</comments>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_COD_CATASTRAL</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1665,11 +2024,103 @@ FROM SIR.SIR_NE_MUNICIPIO
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>ID_DEPARTAMENTO</name>
+        <name>ID_ESTADO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input 3</origin>
-        <comments>ID_DEPARTAMENTO</comments>
+        <origin>EX_FOL00</origin>
+        <comments>ID_ESTADO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_TIPO_PREDIO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_TIPO_PREDIO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_ZONA_REGISTRAL</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_ZONA_REGISTRAL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_COMPLEMENTACION</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_COMPLEMENTACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_FECHA_APERTURA</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_FECHA_APERTURA</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1688,14 +2139,980 @@ FROM SIR.SIR_NE_MUNICIPIO
       <value-meta>
         <type>BigNumber</type>
         <storagetype>normal</storagetype>
+        <name>FLIO_DEFINITIVO</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_DEFINITIVO</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LINDERO</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LINDERO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_ANOTACION</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_ANOTACION</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_DIRECCION</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_DIRECCION</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_SALVEDAD</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_SALVEDAD</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_FECHA_CREACION</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_FECHA_CREACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_COD_CATASTRAL_ANT</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_COD_CATASTRAL_ANT</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_DOCUMENTO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_DOCUMENTO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_RADICACION</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_RADICACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_USUARIO_GRAB</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_USUARIO_GRAB</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_ANOTACION_TMP</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_ANOTACION_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_DIRECCION_TMP</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_DIRECCION_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_SALVEDAD_TMP</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_SALVEDAD_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_COMPLEMENTACION_TMP</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_COMPLEMENTACION_TMP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_INCONSISTENTE</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_INCONSISTENTE</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
         <name>ID_USUARIO</name>
         <length>-1</length>
         <precision>-1</precision>
-        <origin>Table input 3</origin>
+        <origin>EX_FOL00</origin>
         <comments>ID_USUARIO</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_COMENTARIO</name>
+        <length>1024</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_COMENTARIO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_ORDEN_LPAD</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_ORDEN_LPAD</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LAST_ID_ESTADO_HISTORIA</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LAST_ID_ESTADO_HISTORIA</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_DOCUMENTO_TMP</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_DOCUMENTO_TMP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_NOMBRE_LOTE</name>
+        <length>255</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_NOMBRE_LOTE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_USUARIO_ANT</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_USUARIO_ANT</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_DIRECTO</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_DIRECTO</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_CIRCULO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_CIRCULO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_NCOMPLEMENTACION</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_NCOMPLEMENTACION</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_NCOMPLEMENTACION_TMP</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_NCOMPLEMENTACION_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_NDOCUMENTO</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_NDOCUMENTO</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_NDOCUMENTO_TMP</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>EX_FOL00</origin>
+        <comments>ID_NDOCUMENTO_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_HECTAREAS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_HECTAREAS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_METROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_METROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_CENTIMETROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_CENTIMETROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_DETERMINA_INM</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_DETERMINA_INM</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_PRIV_METROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_PRIV_METROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_PRIV_CENTIMETROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_PRIV_CENTIMETROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_CONS_METROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_CONS_METROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_CONS_CENTIMETROS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_CONS_CENTIMETROS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_COEFICIENTE</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_COEFICIENTE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_LINDEROS_DEF</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_LINDEROS_DEF</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_AVALUO</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_AVALUO</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_FECHA_AVALUO</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_FECHA_AVALUO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_DEST_ECONOMICA</name>
+        <length>80</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_DEST_ECONOMICA</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_NUPRE</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_NUPRE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>FLIO_NUPRE_ANT</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_FOL00</origin>
+        <comments>FLIO_NUPRE_ANT</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>
         <trim_type>none</trim_type>
         <case_insensitive>N</case_insensitive>
@@ -1718,13 +3135,13 @@ FROM SIR.SIR_NE_MUNICIPIO
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
-      <yloc>192</yloc>
+      <xloc>240</xloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>EX_MNC00</name>
+    <name>EXMNC00</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1755,7 +3172,7 @@ FROM SIR.SIR_NE_MUNICIPIO
         <name>ID_MUNICIPIO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EX_MNC00</origin>
         <comments>ID_MUNICIPIO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1778,7 +3195,7 @@ FROM SIR.SIR_NE_MUNICIPIO
         <name>MNCP_NOMBRE</name>
         <length>255</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EX_MNC00</origin>
         <comments>MNCP_NOMBRE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1801,7 +3218,7 @@ FROM SIR.SIR_NE_MUNICIPIO
         <name>ID_DEPARTAMENTO</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EX_MNC00</origin>
         <comments>ID_DEPARTAMENTO</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1824,7 +3241,7 @@ FROM SIR.SIR_NE_MUNICIPIO
         <name>ID_USUARIO</name>
         <length>-1</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>EX_MNC00</origin>
         <comments>ID_USUARIO</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1851,13 +3268,683 @@ FROM SIR.SIR_NE_MUNICIPIO
       </output>
     </remotesteps>
     <GUI>
-      <xloc>208</xloc>
+      <xloc>240</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TRCDOO</name>
+    <name>EXVER00</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_SNR</connection>
+    <sql>SELECT
+  ID_VEREDA
+, VRDA_NOMBRE
+, VRDA_CABECERA
+, ID_DEPARTAMENTO
+, ID_MUNICIPIO
+, VRDA_FECHA_CREACION
+FROM SIR.SIR_NE_VEREDA
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>Y</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_VEREDA</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>ID_VEREDA</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>VRDA_NOMBRE</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>VRDA_NOMBRE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>VRDA_CABECERA</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>VRDA_CABECERA</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_DEPARTAMENTO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>ID_DEPARTAMENTO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_MUNICIPIO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>ID_MUNICIPIO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>VRDA_FECHA_CREACION</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EXVER00</origin>
+        <comments>VRDA_FECHA_CREACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>EXZNR00</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_SNR</connection>
+    <sql>SELECT
+  ID_ZONA_REGISTRAL
+, ID_CIRCULO
+, ID_DEPARTAMENTO
+, ID_VEREDA
+, ID_MUNICIPIO
+, ZNRG_FECHA_CREACION
+FROM SIR.SIR_NE_ZONA_REGISTRAL
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>Y</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_ZONA_REGISTRAL</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ID_ZONA_REGISTRAL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_CIRCULO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ID_CIRCULO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_DEPARTAMENTO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ID_DEPARTAMENTO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_VEREDA</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ID_VEREDA</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ID_MUNICIPIO</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ID_MUNICIPIO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>ZNRG_FECHA_CREACION</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>EX_ZNR00</origin>
+        <comments>ZNRG_FECHA_CREACION</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDCDN00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema>public</schema>
+    <table>SIR_NE_CIUDADANO_RES</table>
+    <commit>100</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDDEP00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema>public</schema>
+    <table>SIR_NE_DEPARTAMENTO_RES</table>
+    <commit>100</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDDIR00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema>public</schema>
+    <table>SIR_NE_DIRECCION_RES</table>
+    <commit>100</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDFOL00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema/>
+    <table>SIR_NE_FOLIO_RES</table>
+    <commit>100</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDMNC00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema>public</schema>
+    <table>SIR_NE_MUNICIPIO_RES</table>
+    <commit>100</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDVER00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema/>
+    <table>SIR_NE_VEREDA_RES</table>
+    <commit>100</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>LDZNR00</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>CX_ODS</connection>
+    <schema/>
+    <table>SIR_NE_ZONA_REGISTRAL_RES</table>
+    <commit>100</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TRCDNOO</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1870,55 +3957,42 @@ FROM SIR.SIR_NE_MUNICIPIO
     <fields>
       <field>
         <name>ID_CIUDADANO</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_DOCUMENTO</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_NOMBRE</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_DOCUMENTO</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO1</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_APELLIDO2</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_TELEFONO</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_FECHA_CREACION</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_SOLICITANTE</name>
-        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
-        <rename/>
       </field>
       <field>
         <name>ID_NCIUDADANO</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_TIPO_PERSONA</name>
-        <rename/>
       </field>
       <field>
         <name>CDDN_SEXO</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1937,6 +4011,50 @@ FROM SIR.SIR_NE_MUNICIPIO
     </GUI>
   </step>
   <step>
+    <name>TRDEP00</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>ID_DEPARTAMENTO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>DPRT_NOMBRE</name>
+        <rename/>
+      </field>
+      <field>
+        <name>DPRT_FECHA_CREACION</name>
+        <rename/>
+      </field>
+      <field>
+        <name>ID_USUARIO</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>TRDIR00</name>
     <type>SelectValues</type>
     <description/>
@@ -1950,115 +4068,81 @@ FROM SIR.SIR_NE_MUNICIPIO
     <fields>
       <field>
         <name>ID_DIRECCION</name>
-        <rename/>
       </field>
       <field>
         <name>ID_MATRICULA</name>
-        <rename/>
-      </field>
-      <field>
-        <name>DRCC_ESPECIFICACION</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_VIA_PRINCIPAL</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ID_EJE1</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_VP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_VALOR_EJE1</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_FECHA_CREACION</name>
-        <rename/>
       </field>
       <field>
         <name>ID_USUARIO</name>
-        <rename/>
       </field>
       <field>
         <name>ID_USUARIO_TMP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_USUARIO_ANT</name>
-        <rename/>
       </field>
       <field>
         <name>ID_CIRCULO</name>
-        <rename/>
       </field>
       <field>
         <name>ID_NDIRECCION</name>
-        <rename/>
       </field>
       <field>
         <name>ID_EJE</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_VALOR_EJE</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_VP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_BIS_VP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_DOS_VP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_CARDINALIDAD_VP</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_BIS_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_CARDINALIDAD_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_LETRA_DOS_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_NUMERO_DOS_VS</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_INFO_ADICIONAL</name>
-        <rename/>
       </field>
       <field>
         <name>DRCC_COMPLEMENTO</name>
-        <rename/>
       </field>
       <field>
         <name>COPIED</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2077,7 +4161,185 @@ FROM SIR.SIR_NE_MUNICIPIO
     </GUI>
   </step>
   <step>
-    <name>TRMN00</name>
+    <name>TRFOL00</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>ID_MATRICULA</name>
+      </field>
+      <field>
+        <name>FLIO_COD_CATASTRAL</name>
+      </field>
+      <field>
+        <name>ID_ESTADO</name>
+      </field>
+      <field>
+        <name>ID_TIPO_PREDIO</name>
+      </field>
+      <field>
+        <name>ID_ZONA_REGISTRAL</name>
+      </field>
+      <field>
+        <name>ID_COMPLEMENTACION</name>
+      </field>
+      <field>
+        <name>FLIO_FECHA_APERTURA</name>
+      </field>
+      <field>
+        <name>FLIO_DEFINITIVO</name>
+      </field>
+      <field>
+        <name>FLIO_LINDERO</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_ANOTACION</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_DIRECCION</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_SALVEDAD</name>
+      </field>
+      <field>
+        <name>FLIO_FECHA_CREACION</name>
+      </field>
+      <field>
+        <name>FLIO_COD_CATASTRAL_ANT</name>
+      </field>
+      <field>
+        <name>ID_DOCUMENTO</name>
+      </field>
+      <field>
+        <name>FLIO_RADICACION</name>
+      </field>
+      <field>
+        <name>FLIO_USUARIO_GRAB</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_ANOTACION_TMP</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_DIRECCION_TMP</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_SALVEDAD_TMP</name>
+      </field>
+      <field>
+        <name>ID_COMPLEMENTACION_TMP</name>
+      </field>
+      <field>
+        <name>FLIO_INCONSISTENTE</name>
+      </field>
+      <field>
+        <name>ID_USUARIO</name>
+      </field>
+      <field>
+        <name>FLIO_COMENTARIO</name>
+      </field>
+      <field>
+        <name>FLIO_ORDEN_LPAD</name>
+      </field>
+      <field>
+        <name>FLIO_LAST_ID_ESTADO_HISTORIA</name>
+      </field>
+      <field>
+        <name>ID_DOCUMENTO_TMP</name>
+      </field>
+      <field>
+        <name>FLIO_NOMBRE_LOTE</name>
+      </field>
+      <field>
+        <name>FLIO_USUARIO_ANT</name>
+      </field>
+      <field>
+        <name>FLIO_DIRECTO</name>
+      </field>
+      <field>
+        <name>ID_CIRCULO</name>
+      </field>
+      <field>
+        <name>ID_NCOMPLEMENTACION</name>
+      </field>
+      <field>
+        <name>ID_NCOMPLEMENTACION_TMP</name>
+      </field>
+      <field>
+        <name>ID_NDOCUMENTO</name>
+      </field>
+      <field>
+        <name>ID_NDOCUMENTO_TMP</name>
+      </field>
+      <field>
+        <name>FLIO_HECTAREAS</name>
+      </field>
+      <field>
+        <name>FLIO_METROS</name>
+      </field>
+      <field>
+        <name>FLIO_CENTIMETROS</name>
+      </field>
+      <field>
+        <name>FLIO_DETERMINA_INM</name>
+      </field>
+      <field>
+        <name>FLIO_PRIV_METROS</name>
+      </field>
+      <field>
+        <name>FLIO_PRIV_CENTIMETROS</name>
+      </field>
+      <field>
+        <name>FLIO_CONS_METROS</name>
+      </field>
+      <field>
+        <name>FLIO_CONS_CENTIMETROS</name>
+      </field>
+      <field>
+        <name>FLIO_COEFICIENTE</name>
+      </field>
+      <field>
+        <name>FLIO_LINDEROS_DEF</name>
+      </field>
+      <field>
+        <name>FLIO_AVALUO</name>
+      </field>
+      <field>
+        <name>FLIO_FECHA_AVALUO</name>
+      </field>
+      <field>
+        <name>FLIO_DEST_ECONOMICA</name>
+      </field>
+      <field>
+        <name>FLIO_NUPRE</name>
+      </field>
+      <field>
+        <name>FLIO_NUPRE_ANT</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TRMNC00</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2090,19 +4352,15 @@ FROM SIR.SIR_NE_MUNICIPIO
     <fields>
       <field>
         <name>ID_MUNICIPIO</name>
-        <rename/>
       </field>
       <field>
         <name>MNCP_NOMBRE</name>
-        <rename/>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
-        <rename/>
       </field>
       <field>
         <name>ID_USUARIO</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2121,7 +4379,7 @@ FROM SIR.SIR_NE_MUNICIPIO
     </GUI>
   </step>
   <step>
-    <name>TRDP00</name>
+    <name>TRVER00</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -2133,20 +4391,22 @@ FROM SIR.SIR_NE_MUNICIPIO
     </partitioning>
     <fields>
       <field>
-        <name>ID_MUNICIPIO</name>
-        <rename/>
+        <name>ID_VEREDA</name>
       </field>
       <field>
-        <name>MNCP_NOMBRE</name>
-        <rename/>
+        <name>VRDA_NOMBRE</name>
+      </field>
+      <field>
+        <name>VRDA_CABECERA</name>
       </field>
       <field>
         <name>ID_DEPARTAMENTO</name>
-        <rename/>
       </field>
       <field>
-        <name>ID_USUARIO</name>
-        <rename/>
+        <name>ID_MUNICIPIO</name>
+      </field>
+      <field>
+        <name>VRDA_FECHA_CREACION</name>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2160,13 +4420,13 @@ FROM SIR.SIR_NE_MUNICIPIO
     </remotesteps>
     <GUI>
       <xloc>336</xloc>
-      <yloc>192</yloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>LDCD00</name>
-    <type>TableOutput</type>
+    <name>TRZNR00</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -2175,24 +4435,26 @@ FROM SIR.SIR_NE_MUNICIPIO
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>CX_SNR</connection>
-    <schema/>
-    <table>SIR_NE_CIUDADANO_RES</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
     <fields>
+      <field>
+        <name>ID_ZONA_REGISTRAL</name>
+      </field>
+      <field>
+        <name>ID_CIRCULO</name>
+      </field>
+      <field>
+        <name>ID_DEPARTAMENTO</name>
+      </field>
+      <field>
+        <name>ID_VEREDA</name>
+      </field>
+      <field>
+        <name>ID_MUNICIPIO</name>
+      </field>
+      <field>
+        <name>ZNRG_FECHA_CREACION</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -2203,140 +4465,8 @@ FROM SIR.SIR_NE_MUNICIPIO
       </output>
     </remotesteps>
     <GUI>
-      <xloc>464</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>LDDR00</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>CX_SNR</connection>
-    <schema/>
-    <table>SIR_NE_DIRECCION_RES</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>464</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>LDDEP00</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>CX_SNR</connection>
-    <schema/>
-    <table>SIR_NE_DEPARTAMENTO_RES</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>464</xloc>
-      <yloc>192</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>LDMN00</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>CX_SNR</connection>
-    <schema/>
-    <table>SIR_NE_MUNICIPIO_RES</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>464</xloc>
-      <yloc>288</yloc>
+      <xloc>336</xloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

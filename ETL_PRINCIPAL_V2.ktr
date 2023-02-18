@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>ETL_PRINCIPAL_VF</name>
+    <name>ETL_PRINCIPAL_V2</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -666,7 +666,7 @@
     <hop>
       <from>TRSEL02</from>
       <to>TRHC00</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>TRHC00</from>
@@ -751,7 +751,7 @@
     <hop>
       <from>TRSEL02</from>
       <to>TRHDV00</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>TRHDV03</from>
