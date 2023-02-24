@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>prueba_rb_dir</name>
+    <name>Reverso_ciudadano</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -428,16 +427,16 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2023/02/15 15:13:13.285</created_date>
+    <created_date>2023/02/24 10:40:52.126</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2023/02/15 15:13:13.285</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2023/02/24 10:40:52.126</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>cx_local</name>
+    <name>cx_ods</name>
     <server>localhost</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -544,13 +543,13 @@
   </connection>
   <order>
     <hop>
-      <from>Table input</from>
-      <to>Select values</to>
+      <from>Select values</from>
+      <to>Update</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
-      <to>Update</to>
+      <from>Table input</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -567,82 +566,56 @@
     </partitioning>
     <fields>
       <field>
-        <name>id_direccion</name>
+        <name>id_ciudadano</name>
+        <rename/>
       </field>
       <field>
-        <name>id_matricula</name>
+        <name>cddn_documento</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_via_principal</name>
+        <name>cddn_nombre</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_numero_vp</name>
+        <name>cddn_tipo_documento</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_valor_eje1</name>
+        <name>cddn_apellido1</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_fecha_creacion</name>
+        <name>cddn_apellido2</name>
+        <rename/>
       </field>
       <field>
-        <name>id_usuario</name>
+        <name>cddn_telefono</name>
+        <rename/>
       </field>
       <field>
-        <name>id_usuario_tmp</name>
+        <name>cddn_fecha_creacion</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_usuario_ant</name>
+        <name>cddn_solicitante</name>
+        <rename/>
       </field>
       <field>
         <name>id_circulo</name>
+        <rename/>
       </field>
       <field>
-        <name>id_ndireccion</name>
+        <name>id_nciudadano</name>
+        <rename/>
       </field>
       <field>
-        <name>id_eje</name>
+        <name>cddn_tipo_persona</name>
+        <rename/>
       </field>
       <field>
-        <name>drcc_valor_eje</name>
-      </field>
-      <field>
-        <name>drcc_letra_vp</name>
-      </field>
-      <field>
-        <name>drcc_bis_vp</name>
-      </field>
-      <field>
-        <name>drcc_letra_dos_vp</name>
-      </field>
-      <field>
-        <name>drcc_cardinalidad_vp</name>
-      </field>
-      <field>
-        <name>drcc_numero_vs</name>
-      </field>
-      <field>
-        <name>drcc_letra_vs</name>
-      </field>
-      <field>
-        <name>drcc_bis_vs</name>
-      </field>
-      <field>
-        <name>drcc_cardinalidad_vs</name>
-      </field>
-      <field>
-        <name>drcc_letra_dos_vs</name>
-      </field>
-      <field>
-        <name>drcc_numero_dos_vs</name>
-      </field>
-      <field>
-        <name>drcc_info_adicional</name>
-      </field>
-      <field>
-        <name>drcc_complemento</name>
-      </field>
-      <field>
-        <name>copied</name>
+        <name>cddn_sexo</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -655,8 +628,73 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>400</xloc>
-      <yloc>176</yloc>
+      <xloc>416</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Update</name>
+    <type>Update</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>cx_snrprueba</connection>
+    <skip_lookup>N</skip_lookup>
+    <commit>100</commit>
+    <use_batch>N</use_batch>
+    <error_ignored>N</error_ignored>
+    <ignore_flag_field/>
+    <lookup>
+      <schema>SIR</schema>
+      <table>SIR_NE_CIUDADANO</table>
+      <key>
+        <name>id_ciudadano</name>
+        <field>ID_CIUDADANO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CDDN_NOMBRE</name>
+        <rename>cddn_nombre</rename>
+      </value>
+      <value>
+        <name>CDDN_APELLIDO1</name>
+        <rename>cddn_apellido1</rename>
+      </value>
+      <value>
+        <name>CDDN_APELLIDO2</name>
+        <rename>cddn_apellido2</rename>
+      </value>
+      <value>
+        <name>CDDN_SEXO</name>
+        <rename>cddn_sexo</rename>
+      </value>
+      <value>
+        <name>CDDN_TIPO_DOCUMENTO</name>
+        <rename>cddn_tipo_documento</rename>
+      </value>
+      <value>
+        <name>CDDN_DOCUMENTO</name>
+        <rename>cddn_documento</rename>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -671,35 +709,22 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>cx_local</connection>
+    <connection>cx_ods</connection>
     <sql>SELECT
-  id_direccion
-, id_matricula
-, drcc_via_principal
-, drcc_numero_vp
-, drcc_valor_eje1
-, drcc_fecha_creacion
-, id_usuario
-, id_usuario_tmp
-, drcc_usuario_ant
+  id_ciudadano
+, cddn_documento
+, cddn_nombre
+, cddn_tipo_documento
+, cddn_apellido1
+, cddn_apellido2
+, cddn_telefono
+, cddn_fecha_creacion
+, cddn_solicitante
 , id_circulo
-, id_ndireccion
-, id_eje
-, drcc_valor_eje
-, drcc_letra_vp
-, drcc_bis_vp
-, drcc_letra_dos_vp
-, drcc_cardinalidad_vp
-, drcc_numero_vs
-, drcc_letra_vs
-, drcc_bis_vs
-, drcc_cardinalidad_vs
-, drcc_letra_dos_vs
-, drcc_numero_dos_vs
-, drcc_info_adicional
-, drcc_complemento
-, copied
-FROM "public".sir_ne_direccion_res
+, id_nciudadano
+, cddn_tipo_persona
+, cddn_sexo
+FROM "public".sir_ne_ciudadano_res
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -711,11 +736,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>id_direccion</name>
+        <name>id_ciudadano</name>
         <length>20</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>id_direccion</comments>
+        <comments>id_ciudadano</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -734,57 +759,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>id_matricula</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>id_matricula</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_via_principal</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_via_principal</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_numero_vp</name>
+        <name>cddn_documento</name>
         <length>100</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>drcc_numero_vp</comments>
+        <comments>cddn_documento</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -803,11 +782,103 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>drcc_valor_eje1</name>
+        <name>cddn_nombre</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>cddn_nombre</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cddn_tipo_documento</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>cddn_tipo_documento</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cddn_apellido1</name>
+        <length>150</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>cddn_apellido1</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cddn_apellido2</name>
         <length>100</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>drcc_valor_eje1</comments>
+        <comments>cddn_apellido2</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cddn_telefono</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>cddn_telefono</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -826,11 +897,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>Timestamp</type>
         <storagetype>normal</storagetype>
-        <name>drcc_fecha_creacion</name>
+        <name>cddn_fecha_creacion</name>
         <length>6</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>drcc_fecha_creacion</comments>
+        <comments>cddn_fecha_creacion</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -849,58 +920,12 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>Number</type>
         <storagetype>normal</storagetype>
-        <name>id_usuario</name>
+        <name>cddn_solicitante</name>
         <length>-1</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>id_usuario</comments>
+        <comments>cddn_solicitante</comments>
         <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Number</type>
-        <storagetype>normal</storagetype>
-        <name>id_usuario_tmp</name>
-        <length>-1</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>id_usuario_tmp</comments>
-        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_usuario_ant</name>
-        <length>15</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_usuario_ant</comments>
-        <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>
@@ -941,11 +966,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>BigNumber</type>
         <storagetype>normal</storagetype>
-        <name>id_ndireccion</name>
+        <name>id_nciudadano</name>
         <length>20</length>
         <precision>0</precision>
         <origin>Table input</origin>
-        <comments>id_ndireccion</comments>
+        <comments>id_nciudadano</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol/>
@@ -964,11 +989,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>id_eje</name>
+        <name>cddn_tipo_persona</name>
         <length>20</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>id_eje</comments>
+        <comments>cddn_tipo_persona</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -987,310 +1012,11 @@ FROM "public".sir_ne_direccion_res
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>drcc_valor_eje</name>
-        <length>100</length>
+        <name>cddn_sexo</name>
+        <length>1</length>
         <precision>-1</precision>
         <origin>Table input</origin>
-        <comments>drcc_valor_eje</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_letra_vp</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_letra_vp</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_bis_vp</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_bis_vp</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_letra_dos_vp</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_letra_dos_vp</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_cardinalidad_vp</name>
-        <length>30</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_cardinalidad_vp</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_numero_vs</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_numero_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_letra_vs</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_letra_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_bis_vs</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_bis_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_cardinalidad_vs</name>
-        <length>30</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_cardinalidad_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_letra_dos_vs</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_letra_dos_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_numero_dos_vs</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_numero_dos_vs</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_info_adicional</name>
-        <length>100</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_info_adicional</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>drcc_complemento</name>
-        <length>400</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>drcc_complemento</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>copied</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>copied</comments>
+        <comments>cddn_sexo</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -1316,151 +1042,8 @@ FROM "public".sir_ne_direccion_res
       </output>
     </remotesteps>
     <GUI>
-      <xloc>176</xloc>
-      <yloc>192</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Update</name>
-    <type>Update</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>cx_snrprueba</connection>
-    <skip_lookup>N</skip_lookup>
-    <commit>100</commit>
-    <use_batch>N</use_batch>
-    <error_ignored>N</error_ignored>
-    <ignore_flag_field/>
-    <lookup>
-      <schema>SIR</schema>
-      <table>SIR_NE_DIRECCION</table>
-      <key>
-        <name>id_direccion</name>
-        <field>id_direccion</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>id_matricula</name>
-        <field>id_matricula</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>drcc_via_principal</name>
-        <rename>drcc_via_principal</rename>
-      </value>
-      <value>
-        <name>drcc_numero_vp</name>
-        <rename>drcc_numero_vp</rename>
-      </value>
-      <value>
-        <name>drcc_valor_eje1</name>
-        <rename>drcc_valor_eje1</rename>
-      </value>
-      <value>
-        <name>drcc_fecha_creacion</name>
-        <rename>drcc_fecha_creacion</rename>
-      </value>
-      <value>
-        <name>id_usuario</name>
-        <rename>id_usuario</rename>
-      </value>
-      <value>
-        <name>id_usuario_tmp</name>
-        <rename>id_usuario_tmp</rename>
-      </value>
-      <value>
-        <name>drcc_usuario_ant</name>
-        <rename>drcc_usuario_ant</rename>
-      </value>
-      <value>
-        <name>id_circulo</name>
-        <rename>id_circulo</rename>
-      </value>
-      <value>
-        <name>id_ndireccion</name>
-        <rename>id_ndireccion</rename>
-      </value>
-      <value>
-        <name>id_eje</name>
-        <rename>id_eje</rename>
-      </value>
-      <value>
-        <name>drcc_valor_eje</name>
-        <rename>drcc_valor_eje</rename>
-      </value>
-      <value>
-        <name>drcc_letra_vp</name>
-        <rename>drcc_letra_vp</rename>
-      </value>
-      <value>
-        <name>drcc_bis_vp</name>
-        <rename>drcc_bis_vp</rename>
-      </value>
-      <value>
-        <name>drcc_letra_dos_vp</name>
-        <rename>drcc_letra_dos_vp</rename>
-      </value>
-      <value>
-        <name>drcc_cardinalidad_vp</name>
-        <rename>drcc_cardinalidad_vp</rename>
-      </value>
-      <value>
-        <name>drcc_numero_vs</name>
-        <rename>drcc_numero_vs</rename>
-      </value>
-      <value>
-        <name>drcc_letra_vs</name>
-        <rename>drcc_letra_vs</rename>
-      </value>
-      <value>
-        <name>drcc_bis_vs</name>
-        <rename>drcc_bis_vs</rename>
-      </value>
-      <value>
-        <name>drcc_cardinalidad_vs</name>
-        <rename>drcc_cardinalidad_vs</rename>
-      </value>
-      <value>
-        <name>drcc_letra_dos_vs</name>
-        <rename>drcc_letra_dos_vs</rename>
-      </value>
-      <value>
-        <name>drcc_numero_dos_vs</name>
-        <rename>drcc_numero_dos_vs</rename>
-      </value>
-      <value>
-        <name>drcc_info_adicional</name>
-        <rename>drcc_info_adicional</rename>
-      </value>
-      <value>
-        <name>drcc_complemento</name>
-        <rename>drcc_complemento</rename>
-      </value>
-      <value>
-        <name>copied</name>
-        <rename>copied</rename>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>576</xloc>
-      <yloc>192</yloc>
+      <xloc>240</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
