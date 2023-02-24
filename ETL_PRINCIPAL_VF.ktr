@@ -666,7 +666,7 @@
     <hop>
       <from>TRSEL02</from>
       <to>TRHC00</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>TRHC00</from>
@@ -711,7 +711,7 @@
     <hop>
       <from>TRSEL02</from>
       <to>TRHD00</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>TRHD00</from>
@@ -1061,8 +1061,7 @@
       <schema_name/>
     </partitioning>
     <connection>CX_ODS</connection>
-    <sql>SELECT
- *
+    <sql>SELECT *
 FROM "public".grupo_normalizado
 </sql>
     <limit>0</limit>
@@ -1078,7 +1077,7 @@ FROM "public".grupo_normalizado
         <name>bis_p</name>
         <length>3</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>bis_p</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1101,7 +1100,7 @@ FROM "public".grupo_normalizado
         <name>bis_g</name>
         <length>3</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>bis_g</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1124,7 +1123,7 @@ FROM "public".grupo_normalizado
         <name>codigo_postal</name>
         <length>25</length>
         <precision>0</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>codigo_postal</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1147,7 +1146,7 @@ FROM "public".grupo_normalizado
         <name>complemento</name>
         <length>45</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>complemento</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1170,7 +1169,7 @@ FROM "public".grupo_normalizado
         <name>cuadrante</name>
         <length>5</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cuadrante</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1193,7 +1192,7 @@ FROM "public".grupo_normalizado
         <name>cuadrante_p</name>
         <length>5</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cuadrante_p</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1216,7 +1215,7 @@ FROM "public".grupo_normalizado
         <name>dprt_nombre</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>dprt_nombre</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1239,7 +1238,7 @@ FROM "public".grupo_normalizado
         <name>divipola</name>
         <length>40</length>
         <precision>0</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>divipola</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1262,7 +1261,7 @@ FROM "public".grupo_normalizado
         <name>id_departamento</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>id_departamento</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1285,7 +1284,7 @@ FROM "public".grupo_normalizado
         <name>tipo_via</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>tipo_via</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1308,7 +1307,7 @@ FROM "public".grupo_normalizado
         <name>id_ciudadano</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>id_ciudadano</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1331,7 +1330,7 @@ FROM "public".grupo_normalizado
         <name>letra_1g</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>letra_1g</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1354,7 +1353,7 @@ FROM "public".grupo_normalizado
         <name>letra_1p</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>letra_1p</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1377,7 +1376,7 @@ FROM "public".grupo_normalizado
         <name>letra_eg</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>letra_eg</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1400,7 +1399,7 @@ FROM "public".grupo_normalizado
         <name>letra_2p</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>letra_2p</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1423,7 +1422,7 @@ FROM "public".grupo_normalizado
         <name>mnco_nombre</name>
         <length>255</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>mnco_nombre</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1446,7 +1445,7 @@ FROM "public".grupo_normalizado
         <name>id_municipio</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>id_municipio</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1469,7 +1468,7 @@ FROM "public".grupo_normalizado
         <name>cddn_nombre</name>
         <length>300</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cddn_nombre</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1492,7 +1491,7 @@ FROM "public".grupo_normalizado
         <name>nombre_generadora</name>
         <length>15</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>nombre_generadora</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1515,7 +1514,7 @@ FROM "public".grupo_normalizado
         <name>nombre_principal</name>
         <length>45</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>nombre_principal</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1538,7 +1537,7 @@ FROM "public".grupo_normalizado
         <name>numero</name>
         <length>4</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>numero</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1561,7 +1560,7 @@ FROM "public".grupo_normalizado
         <name>cddn_apellido1</name>
         <length>150</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cddn_apellido1</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1584,7 +1583,7 @@ FROM "public".grupo_normalizado
         <name>cdnn_apellido2</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cdnn_apellido2</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1607,7 +1606,7 @@ FROM "public".grupo_normalizado
         <name>cddn_sexo</name>
         <length>1</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cddn_sexo</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1630,7 +1629,7 @@ FROM "public".grupo_normalizado
         <name>cddn_tipo_documento</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>cddn_tipo_documento</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1653,7 +1652,7 @@ FROM "public".grupo_normalizado
         <name>tipo_via_abreav</name>
         <length>2</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>tipo_via_abreav</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1676,7 +1675,7 @@ FROM "public".grupo_normalizado
         <name>id_matricula</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>id_matricula</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1699,7 +1698,7 @@ FROM "public".grupo_normalizado
         <name>id_circulo</name>
         <length>3</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>id_circulo</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1722,7 +1721,7 @@ FROM "public".grupo_normalizado
         <name>folio_centimetros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_centimetros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1745,7 +1744,7 @@ FROM "public".grupo_normalizado
         <name>folio_metros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_metros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1768,7 +1767,7 @@ FROM "public".grupo_normalizado
         <name>folio_priv_centimetros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_priv_centimetros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1791,7 +1790,7 @@ FROM "public".grupo_normalizado
         <name>folio_priv_metros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_priv_metros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1814,7 +1813,7 @@ FROM "public".grupo_normalizado
         <name>folio_cons_centimetros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_cons_centimetros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1837,7 +1836,7 @@ FROM "public".grupo_normalizado
         <name>folio_cons_metros</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_cons_metros</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
@@ -1860,7 +1859,7 @@ FROM "public".grupo_normalizado
         <name>folio_coeficiente</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>EX00</origin>
+        <origin>EXSEL00</origin>
         <comments>folio_coeficiente</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>

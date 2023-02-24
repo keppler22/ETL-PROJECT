@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>Respaldo_Ciudadano</name>
+    <name>Respaldo_direcciones</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -544,13 +544,13 @@
   </connection>
   <order>
     <hop>
-      <from>EXCDN00</from>
-      <to>TRCDNOO</to>
+      <from>TRDIR00</from>
+      <to>LDDIR00</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TRCDNOO</from>
-      <to>LDCDN00</to>
+      <from>EXCDN00</from>
+      <to>TRDIR00</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -567,20 +567,33 @@
     </partitioning>
     <connection>post</connection>
     <sql>SELECT
-  ID_CIUDADANO
-, CDDN_DOCUMENTO
-, CDDN_NOMBRE
-, CDDN_TIPO_DOCUMENTO
-, CDDN_APELLIDO1
-, CDDN_APELLIDO2
-, CDDN_TELEFONO
-, CDDN_FECHA_CREACION
-, CDDN_SOLICITANTE
+  ID_DIRECCION
+, ID_MATRICULA
+, DRCC_VIA_PRINCIPAL
+, DRCC_NUMERO_VP
+, DRCC_VALOR_EJE1
+, DRCC_FECHA_CREACION
+, ID_USUARIO
+, ID_USUARIO_TMP
+, DRCC_USUARIO_ANT
 , ID_CIRCULO
-, ID_NCIUDADANO
-, CDDN_TIPO_PERSONA
-, CDDN_SEXO
-FROM SIR.SIR_NE_CIUDADANO
+, ID_NDIRECCION
+, ID_EJE
+, DRCC_VALOR_EJE
+, DRCC_LETRA_VP
+, DRCC_BIS_VP
+, DRCC_LETRA_DOS_VP
+, DRCC_CARDINALIDAD_VP
+, DRCC_NUMERO_VS
+, DRCC_LETRA_VS
+, DRCC_BIS_VS
+, DRCC_CARDINALIDAD_VS
+, DRCC_LETRA_DOS_VS
+, DRCC_NUMERO_DOS_VS
+, DRCC_INFO_ADICIONAL
+, DRCC_COMPLEMENTO
+, COPIED
+FROM SIR.SIR_NE_DIRECCION
 WHERE ID_CIRCULO LIKE '002'
 </sql>
     <limit>0</limit>
@@ -593,11 +606,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>ID_CIUDADANO</name>
+        <name>ID_DIRECCION</name>
         <length>20</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>ID_CIUDADANO</comments>
+        <comments>ID_DIRECCION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -616,57 +629,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_DOCUMENTO</name>
-        <length>100</length>
-        <precision>-1</precision>
-        <origin>EXCDN00</origin>
-        <comments>CDDN_DOCUMENTO</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_NOMBRE</name>
-        <length>300</length>
-        <precision>-1</precision>
-        <origin>EXCDN00</origin>
-        <comments>CDDN_NOMBRE</comments>
-        <conversion_Mask/>
-        <decimal_symbol>,</decimal_symbol>
-        <grouping_symbol>.</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>es_CO</date_format_locale>
-        <date_format_timezone>America/Bogota</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>CDDN_TIPO_DOCUMENTO</name>
+        <name>ID_MATRICULA</name>
         <length>20</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_TIPO_DOCUMENTO</comments>
+        <comments>ID_MATRICULA</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -685,11 +652,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_APELLIDO1</name>
-        <length>150</length>
+        <name>DRCC_VIA_PRINCIPAL</name>
+        <length>20</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_APELLIDO1</comments>
+        <comments>DRCC_VIA_PRINCIPAL</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -708,11 +675,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_APELLIDO2</name>
+        <name>DRCC_NUMERO_VP</name>
         <length>100</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_APELLIDO2</comments>
+        <comments>DRCC_NUMERO_VP</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -731,11 +698,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_TELEFONO</name>
+        <name>DRCC_VALOR_EJE1</name>
         <length>100</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_TELEFONO</comments>
+        <comments>DRCC_VALOR_EJE1</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -754,11 +721,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>Timestamp</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_FECHA_CREACION</name>
+        <name>DRCC_FECHA_CREACION</name>
         <length>0</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_FECHA_CREACION</comments>
+        <comments>DRCC_FECHA_CREACION</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -777,14 +744,60 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>BigNumber</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_SOLICITANTE</name>
+        <name>ID_USUARIO</name>
         <length>-1</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_SOLICITANTE</comments>
+        <comments>ID_USUARIO</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>ID_USUARIO_TMP</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>ID_USUARIO_TMP</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_USUARIO_ANT</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_USUARIO_ANT</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
         <currency_symbol/>
         <trim_type>none</trim_type>
         <case_insensitive>N</case_insensitive>
@@ -823,11 +836,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>BigNumber</type>
         <storagetype>normal</storagetype>
-        <name>ID_NCIUDADANO</name>
+        <name>ID_NDIRECCION</name>
         <length>20</length>
         <precision>0</precision>
         <origin>EXCDN00</origin>
-        <comments>ID_NCIUDADANO</comments>
+        <comments>ID_NDIRECCION</comments>
         <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol/>
@@ -846,11 +859,11 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_TIPO_PERSONA</name>
+        <name>ID_EJE</name>
         <length>20</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_TIPO_PERSONA</comments>
+        <comments>ID_EJE</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -869,11 +882,310 @@ WHERE ID_CIRCULO LIKE '002'
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>CDDN_SEXO</name>
-        <length>1</length>
+        <name>DRCC_VALOR_EJE</name>
+        <length>100</length>
         <precision>-1</precision>
         <origin>EXCDN00</origin>
-        <comments>CDDN_SEXO</comments>
+        <comments>DRCC_VALOR_EJE</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_LETRA_VP</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_LETRA_VP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_BIS_VP</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_BIS_VP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_LETRA_DOS_VP</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_LETRA_DOS_VP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_CARDINALIDAD_VP</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_CARDINALIDAD_VP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_NUMERO_VS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_NUMERO_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_LETRA_VS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_LETRA_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_BIS_VS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_BIS_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_CARDINALIDAD_VS</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_CARDINALIDAD_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_LETRA_DOS_VS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_LETRA_DOS_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_NUMERO_DOS_VS</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_NUMERO_DOS_VS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_INFO_ADICIONAL</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_INFO_ADICIONAL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DRCC_COMPLEMENTO</name>
+        <length>400</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>DRCC_COMPLEMENTO</comments>
+        <conversion_Mask/>
+        <decimal_symbol>,</decimal_symbol>
+        <grouping_symbol>.</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>es_CO</date_format_locale>
+        <date_format_timezone>America/Bogota</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>COPIED</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>EXCDN00</origin>
+        <comments>COPIED</comments>
         <conversion_Mask/>
         <decimal_symbol>,</decimal_symbol>
         <grouping_symbol>.</grouping_symbol>
@@ -899,13 +1211,13 @@ WHERE ID_CIRCULO LIKE '002'
       </output>
     </remotesteps>
     <GUI>
-      <xloc>176</xloc>
-      <yloc>112</yloc>
+      <xloc>192</xloc>
+      <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>LDCDN00</name>
+    <name>LDDIR00</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -917,7 +1229,7 @@ WHERE ID_CIRCULO LIKE '002'
     </partitioning>
     <connection>CX_ODS</connection>
     <schema>public</schema>
-    <table>sir_ne_ciudadano_res</table>
+    <table>SIR_NE_DIRECCION_RES</table>
     <commit>100</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
@@ -943,13 +1255,13 @@ WHERE ID_CIRCULO LIKE '002'
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
+      <xloc>560</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TRCDNOO</name>
+    <name>TRDIR00</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -961,43 +1273,82 @@ WHERE ID_CIRCULO LIKE '002'
     </partitioning>
     <fields>
       <field>
-        <name>ID_CIUDADANO</name>
+        <name>ID_DIRECCION</name>
       </field>
       <field>
-        <name>CDDN_DOCUMENTO</name>
+        <name>ID_MATRICULA</name>
       </field>
       <field>
-        <name>CDDN_NOMBRE</name>
+        <name>DRCC_VIA_PRINCIPAL</name>
       </field>
       <field>
-        <name>CDDN_TIPO_DOCUMENTO</name>
+        <name>DRCC_NUMERO_VP</name>
       </field>
       <field>
-        <name>CDDN_APELLIDO1</name>
+        <name>DRCC_VALOR_EJE1</name>
       </field>
       <field>
-        <name>CDDN_APELLIDO2</name>
+        <name>DRCC_FECHA_CREACION</name>
       </field>
       <field>
-        <name>CDDN_TELEFONO</name>
+        <name>ID_USUARIO</name>
       </field>
       <field>
-        <name>CDDN_FECHA_CREACION</name>
+        <name>ID_USUARIO_TMP</name>
       </field>
       <field>
-        <name>CDDN_SOLICITANTE</name>
+        <name>DRCC_USUARIO_ANT</name>
       </field>
       <field>
         <name>ID_CIRCULO</name>
       </field>
       <field>
-        <name>ID_NCIUDADANO</name>
+        <name>ID_NDIRECCION</name>
       </field>
       <field>
-        <name>CDDN_TIPO_PERSONA</name>
+        <name>ID_EJE</name>
       </field>
       <field>
-        <name>CDDN_SEXO</name>
+        <name>DRCC_VALOR_EJE</name>
+      </field>
+      <field>
+        <name>DRCC_LETRA_VP</name>
+      </field>
+      <field>
+        <name>DRCC_BIS_VP</name>
+      </field>
+      <field>
+        <name>DRCC_LETRA_DOS_VP</name>
+      </field>
+      <field>
+        <name>DRCC_CARDINALIDAD_VP</name>
+      </field>
+      <field>
+        <name>DRCC_NUMERO_VS</name>
+      </field>
+      <field>
+        <name>DRCC_LETRA_VS</name>
+      </field>
+      <field>
+        <name>DRCC_BIS_VS</name>
+      </field>
+      <field>
+        <name>DRCC_CARDINALIDAD_VS</name>
+      </field>
+      <field>
+        <name>DRCC_LETRA_DOS_VS</name>
+      </field>
+      <field>
+        <name>DRCC_NUMERO_DOS_VS</name>
+      </field>
+      <field>
+        <name>DRCC_INFO_ADICIONAL</name>
+      </field>
+      <field>
+        <name>DRCC_COMPLEMENTO</name>
+      </field>
+      <field>
+        <name>COPIED</name>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -1010,8 +1361,8 @@ WHERE ID_CIRCULO LIKE '002'
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
-      <yloc>112</yloc>
+      <xloc>384</xloc>
+      <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

@@ -435,10 +435,10 @@
   </info>
   <notepads>
     <notepad>
-      <note>SIR_NE_CIUDADANO</note>
+      <note>SIR_NE_CIUDADANO - OK</note>
       <xloc>48</xloc>
       <yloc>32</yloc>
-      <width>121</width>
+      <width>147</width>
       <heigth>26</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
